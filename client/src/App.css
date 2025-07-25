@@ -1,0 +1,35 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(./assets/rmkcampus.jpg)  ;
+   background-size: cover; 
+   background-color: rgba(0, 0, 0, 1);
+
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  
+}
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background-color: rgba(0, 0, 0, 0.421); dark overlay
+   */
+   background-image: linear-gradient(to bottom ,rgba(0, 0, 0, 0.638)  , rgba(93, 225, 117, 0.314) );
+
+  z-index: -1; /* behind the text */
+  
+  
+}
+.header__img{
+  width: 100%;
+  height: 100dvh;
+}
+.header__img{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+}
