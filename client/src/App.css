@@ -5,10 +5,8 @@ body {
   background-image: url(./assets/rmkcampus.jpg)  ;
    background-size: cover; 
    background-color: rgba(0, 0, 0, 1);
-
   /* background-repeat: no-repeat; */
   /* background-position: center; */
-  
 }
 body::before {
   content: "";
@@ -17,14 +15,11 @@ body::before {
   /* background-color: rgba(0, 0, 0, 0.421); dark overlay
    */
    background-image: linear-gradient(to bottom ,rgba(0, 0, 0, 0.638)  , rgba(93, 225, 117, 0.314) );
-
-  z-index: -1; /* behind the text */
-  
-  
+  z-index: -1; /* behind the text */  
 }
-.header__img{
-  width: 100%;
-  height: 100dvh;
+.header__logo-img{
+ filter: drop-shadow(5px 5px);
+ 
 }
 .header__img{
   position: relative;
@@ -32,4 +27,42 @@ body::before {
   left: 20px;
   width: 150px;
   height: 150px;
+}
+.navbar{
+  border-radius: 0px 70px 0px 70px ;
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.415);
+}
+
+.navbar__btn button{
+  border: solid rgb(255, 255, 255) 1px;
+  padding-inline:10px ;
+  padding-block:2px ;
+  box-shadow: 2px 2px white ;
+}
+.navbar__list li{
+  border-bottom: 2px solid white;
+}
+.navbar__list li:hover{
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.navbar__btn button:hover{
+ box-shadow: 1px 1px 10px ;
+ border-radius: 20px;
+ transition: 0.5s;
+ cursor: pointer;
+}
+.asidebar{
+  transition: 0.5s;
+}
+.asidebar__menu{
+  transition: 1s;
+ 
+  
+}
+.asidebar__menu:hover{
+  opacity: 0.5;
+  transition: 0s;
 }
